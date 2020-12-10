@@ -19,7 +19,7 @@ docker-compose up -d --build
 2. 輸入帳號密碼
    - 帳號：admin
    - 密碼：123
-# 系統截圖
+## 系統截圖
 ![alt text](./images/ScreenShot.png "系統畫面")
 
 # reference
