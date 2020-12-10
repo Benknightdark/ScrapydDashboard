@@ -1,0 +1,721 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {
+            "value": "\n```python\nimport sys\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {
+            "value": "\n```python\nimport traceback\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {
+            "value": "\n```python\nimport logging\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "scrapy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "detail": "scrapy",
+        "documentation": {
+            "value": "\n```python\nimport scrapy\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "signals",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {
+            "value": "\n```python\nimport scrapy\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {
+            "value": "\n```python\nimport bs4\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {
+            "value": "\n```python\nimport bs4\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {
+            "value": "\n```python\nimport json\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "IgnoreRequest",
+        "importPath": "scrapy.exceptions",
+        "description": "scrapy.exceptions",
+        "isExtraImport": true,
+        "detail": "scrapy.exceptions",
+        "documentation": {
+            "value": "\n```python\nimport scrapy.exceptions\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "NotConfigured",
+        "importPath": "scrapy.exceptions",
+        "description": "scrapy.exceptions",
+        "isExtraImport": true,
+        "detail": "scrapy.exceptions",
+        "documentation": {
+            "value": "\n```python\nimport scrapy.exceptions\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "is_item",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {
+            "value": "\n```python\nimport itemadapter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ItemAdapter",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {
+            "value": "\n```python\nimport itemadapter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ItemAdapter",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {
+            "value": "\n```python\nimport itemadapter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "HttpProxyMiddleware",
+        "importPath": "scrapy.downloadermiddlewares.httpproxy",
+        "description": "scrapy.downloadermiddlewares.httpproxy",
+        "isExtraImport": true,
+        "detail": "scrapy.downloadermiddlewares.httpproxy",
+        "documentation": {
+            "value": "\n```python\nimport scrapy.downloadermiddlewares.httpproxy\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {
+            "value": "\n```python\nimport collections\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {
+            "value": "\n```python\nimport random\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "format_error_msg",
+        "importPath": "helpers.error_log_helper",
+        "description": "helpers.error_log_helper",
+        "isExtraImport": true,
+        "detail": "helpers.error_log_helper",
+        "documentation": {
+            "value": "\n```python\nimport helpers.error_log_helper\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {
+            "value": "\n```python\nimport flask\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "APScheduler",
+        "importPath": "flask_apscheduler",
+        "description": "flask_apscheduler",
+        "isExtraImport": true,
+        "detail": "flask_apscheduler",
+        "documentation": {
+            "value": "\n```python\nimport flask_apscheduler\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {
+            "value": "\n```python\nimport requests\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {
+            "value": "\n```python\nimport os\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "format_error_msg",
+        "kind": 2,
+        "importPath": "crawler.helpers.error_log_helper",
+        "description": "crawler.helpers.error_log_helper",
+        "peekOfCode": "def format_error_msg(e):\n    '''\n    格式化錯誤訊息\n    '''\n    error_class = e.__class__.__name__ #取得錯誤類型\n    detail = e.args[0] #取得詳細內容\n    cl, exc, tb = sys.exc_info() #取得Call Stack\n    lastCallStack = traceback.extract_tb(tb)[-1] #取得Call Stack的最後一筆資料\n    fileName = lastCallStack[0] #取得發生的檔案名稱\n    lineNum = lastCallStack[1] #取得發生的行號",
+        "detail": "crawler.helpers.error_log_helper",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.helpers.error_log_helper import format_error_msg\n```\n\n```python\n\n\n```\n\n```python\ndef format_error_msg(e):\n    '''\n    格式化錯誤訊息\n    '''\n    error_class = e.__class__.__name__ #取得錯誤類型\n    detail = e.args[0] #取得詳細內容\n    cl, exc, tb = sys.exc_info() #取得Call Stack\n    lastCallStack = traceback.extract_tb(tb)[-1] #取得Call Stack的最後一筆資料\n    fileName = lastCallStack[0] #取得發生的檔案名稱\n    lineNum = lastCallStack[1] #取得發生的行號\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "CrawlSpider",
+        "kind": 6,
+        "importPath": "crawler.myproject.spiders.crawl",
+        "description": "crawler.myproject.spiders.crawl",
+        "peekOfCode": "class CrawlSpider(scrapy.Spider):\n    name = 'crawl'\n    def start_requests(self):\n        for i in range(30):\n            logging.info(str(i))\n            yield scrapy.Request('https://httpbin.org/ip', dont_filter=True)\n    def parse(self, response):\n        print(\"-------------------------- => \"+response.text)",
+        "detail": "crawler.myproject.spiders.crawl",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.spiders.crawl import CrawlSpider\n```\n\n```python\n\n\n```\n\n```python\nclass CrawlSpider(scrapy.Spider):\n    name = 'crawl'\n    def start_requests(self):\n        for i in range(30):\n            logging.info(str(i))\n            yield scrapy.Request('https://httpbin.org/ip', dont_filter=True)\n    def parse(self, response):\n        print(\"-------------------------- => \"+response.text)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ProxySpidersSpider",
+        "kind": 6,
+        "importPath": "crawler.myproject.spiders.proxy_spider",
+        "description": "crawler.myproject.spiders.proxy_spider",
+        "peekOfCode": "class ProxySpidersSpider(scrapy.Spider):\n    name = 'proxy_spider'\n    allowed_domains = ['www.free-proxy-list.net']\n    start_urls = ['https://free-proxy-list.net/']\n    custom_settings = {\n        'ITEM_PIPELINES': {\n            'myproject.pipelines.JsonWriterPipeline': 300,\n        }\n    }\n    data = []",
+        "detail": "crawler.myproject.spiders.proxy_spider",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.spiders.proxy_spider import ProxySpidersSpider\n```\n\n```python\n\n\n```\n\n```python\nclass ProxySpidersSpider(scrapy.Spider):\n    name = 'proxy_spider'\n    allowed_domains = ['www.free-proxy-list.net']\n    start_urls = ['https://free-proxy-list.net/']\n    custom_settings = {\n        'ITEM_PIPELINES': {\n            'myproject.pipelines.JsonWriterPipeline': 300,\n        }\n    }\n    data = []\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ShopSpidperSpider",
+        "kind": 6,
+        "importPath": "crawler.myproject.spiders.shop_spidper",
+        "description": "crawler.myproject.spiders.shop_spidper",
+        "peekOfCode": "class ShopSpidperSpider(scrapy.Spider):\n    name = 'shop_spidper'\n    allowed_domains = ['www.costco.com.tw']\n    start_urls = ['https://www.costco.com.tw/Health-Beauty/Vitamins-Herbals-Dietary-Supplements/c/701']\n    data=[]\n    def closed(self, reason):\n        logging.info('fucking closed')\n        logging.info(self.data)\n    def parse(self, response):\n        root =BeautifulSoup(response.body,'lxml')",
+        "detail": "crawler.myproject.spiders.shop_spidper",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.spiders.shop_spidper import ShopSpidperSpider\n```\n\n```python\n\n\n```\n\n```python\nclass ShopSpidperSpider(scrapy.Spider):\n    name = 'shop_spidper'\n    allowed_domains = ['www.costco.com.tw']\n    start_urls = ['https://www.costco.com.tw/Health-Beauty/Vitamins-Herbals-Dietary-Supplements/c/701']\n    data=[]\n    def closed(self, reason):\n        logging.info('fucking closed')\n        logging.info(self.data)\n    def parse(self, response):\n        root =BeautifulSoup(response.body,'lxml')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "MyprojectItem",
+        "kind": 6,
+        "importPath": "crawler.myproject.items",
+        "description": "crawler.myproject.items",
+        "peekOfCode": "class MyprojectItem(scrapy.Item):\n    # define the fields for your item here like:\n    # name = scrapy.Field()\n    pass",
+        "detail": "crawler.myproject.items",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.items import MyprojectItem\n```\n\n```python\n\n\n```\n\n```python\nclass MyprojectItem(scrapy.Item):\n    # define the fields for your item here like:\n    # name = scrapy.Field()\n    pass\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "RandomProxyMiddleware",
+        "kind": 6,
+        "importPath": "crawler.myproject.middlewares",
+        "description": "crawler.myproject.middlewares",
+        "peekOfCode": "class RandomProxyMiddleware(HttpProxyMiddleware):\n    def __init__(self, auth_encoding=\"latin-1\", proxy_list_file=None):\n        if not proxy_list_file:\n            raise NotConfigured\n        self.auth_encoding = auth_encoding\n        self.proxies = defaultdict(list)\n        with open(proxy_list_file) as f:\n            proxy_list = json.load(f)\n            for proxy in proxy_list:\n                scheme = proxy[\"scheme\"]",
+        "detail": "crawler.myproject.middlewares",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.middlewares import RandomProxyMiddleware\n```\n\n```python\n\n\n```\n\n```python\nclass RandomProxyMiddleware(HttpProxyMiddleware):\n    def __init__(self, auth_encoding=\"latin-1\", proxy_list_file=None):\n        if not proxy_list_file:\n            raise NotConfigured\n        self.auth_encoding = auth_encoding\n        self.proxies = defaultdict(list)\n        with open(proxy_list_file) as f:\n            proxy_list = json.load(f)\n            for proxy in proxy_list:\n                scheme = proxy[\"scheme\"]\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "MyprojectSpiderMiddleware",
+        "kind": 6,
+        "importPath": "crawler.myproject.middlewares",
+        "description": "crawler.myproject.middlewares",
+        "peekOfCode": "class MyprojectSpiderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the spider middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "crawler.myproject.middlewares",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.middlewares import MyprojectSpiderMiddleware\n```\n\n```python\n\n\n```\n\n```python\nclass MyprojectSpiderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the spider middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "MyprojectDownloaderMiddleware",
+        "kind": 6,
+        "importPath": "crawler.myproject.middlewares",
+        "description": "crawler.myproject.middlewares",
+        "peekOfCode": "class MyprojectDownloaderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the downloader middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "crawler.myproject.middlewares",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.middlewares import MyprojectDownloaderMiddleware\n```\n\n```python\n\n\n```\n\n```python\nclass MyprojectDownloaderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the downloader middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "JsonWriterPipeline",
+        "kind": 6,
+        "importPath": "crawler.myproject.pipelines",
+        "description": "crawler.myproject.pipelines",
+        "peekOfCode": "class JsonWriterPipeline(object):\n    line=[]\n    def open_spider(self, spider):\n        self.file = open('proxy.json', 'w')\n        # Your scraped items will be saved in the file 'scraped_items.json'.\n        # You can change the filename to whatever you want.\n        # self.file.write(\"[\")\n    def close_spider(self, spider):\n        # self.file.write(self.line[:-2])\n        # self.file.write(\"]\")",
+        "detail": "crawler.myproject.pipelines",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.pipelines import JsonWriterPipeline\n```\n\n```python\n\n\n```\n\n```python\nclass JsonWriterPipeline(object):\n    line=[]\n    def open_spider(self, spider):\n        self.file = open('proxy.json', 'w')\n        # Your scraped items will be saved in the file 'scraped_items.json'.\n        # You can change the filename to whatever you want.\n        # self.file.write(\"[\")\n    def close_spider(self, spider):\n        # self.file.write(self.line[:-2])\n        # self.file.write(\"]\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "BOT_NAME",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "BOT_NAME = 'myproject'\nSPIDER_MODULES = ['myproject.spiders']\nNEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import BOT_NAME\n```\n\n```python\n\n\n```\n\n```python\nBOT_NAME = 'myproject'\nSPIDER_MODULES = ['myproject.spiders']\nNEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "SPIDER_MODULES",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "SPIDER_MODULES = ['myproject.spiders']\nNEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import SPIDER_MODULES\n```\n\n```python\n\n\n```\n\n```python\nSPIDER_MODULES = ['myproject.spiders']\nNEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "NEWSPIDER_MODULE",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "NEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import NEWSPIDER_MODULE\n```\n\n```python\n\n\n```\n\n```python\nNEWSPIDER_MODULE = 'myproject.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#USER_AGENT",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #USER_AGENT\n```\n\n```python\n\n\n```\n\n```python\n#USER_AGENT = 'myproject (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ROBOTSTXT_OBEY",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "ROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import ROBOTSTXT_OBEY\n```\n\n```python\n\n\n```\n\n```python\nROBOTSTXT_OBEY = False\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #CONCURRENT_REQUESTS\n```\n\n```python\n\n\n```\n\n```python\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#DOWNLOAD_DELAY",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #DOWNLOAD_DELAY\n```\n\n```python\n\n\n```\n\n```python\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_DOMAIN",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #CONCURRENT_REQUESTS_PER_DOMAIN\n```\n\n```python\n\n\n```\n\n```python\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_IP",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #CONCURRENT_REQUESTS_PER_IP\n```\n\n```python\n\n\n```\n\n```python\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#COOKIES_ENABLED",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #COOKIES_ENABLED\n```\n\n```python\n\n\n```\n\n```python\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#TELNETCONSOLE_ENABLED",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #TELNETCONSOLE_ENABLED\n```\n\n```python\n\n\n```\n\n```python\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#DEFAULT_REQUEST_HEADERS",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #DEFAULT_REQUEST_HEADERS\n```\n\n```python\n\n\n```\n\n```python\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#SPIDER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html\n#DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #SPIDER_MIDDLEWARES\n```\n\n```python\n\n\n```\n\n```python\n#SPIDER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html\n#DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#DOWNLOADER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html\n#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #DOWNLOADER_MIDDLEWARES\n```\n\n```python\n\n\n```\n\n```python\n#DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.MyprojectDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html\n#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#EXTENSIONS",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html\n# ITEM_PIPELINES = {\n#    'myproject.pipelines.MyprojectPipeline': 300,\n# }\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #EXTENSIONS\n```\n\n```python\n\n\n```\n\n```python\n#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html\n# ITEM_PIPELINES = {\n#    'myproject.pipelines.MyprojectPipeline': 300,\n# }\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#AUTOTHROTTLE_ENABLED",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #AUTOTHROTTLE_ENABLED\n```\n\n```python\n\n\n```\n\n```python\n#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#AUTOTHROTTLE_START_DELAY",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #AUTOTHROTTLE_START_DELAY\n```\n\n```python\n\n\n```\n\n```python\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#AUTOTHROTTLE_MAX_DELAY",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #AUTOTHROTTLE_MAX_DELAY\n```\n\n```python\n\n\n```\n\n```python\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#AUTOTHROTTLE_TARGET_CONCURRENCY",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #AUTOTHROTTLE_TARGET_CONCURRENCY\n```\n\n```python\n\n\n```\n\n```python\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#AUTOTHROTTLE_DEBUG",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #AUTOTHROTTLE_DEBUG\n```\n\n```python\n\n\n```\n\n```python\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#HTTPCACHE_ENABLED",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #HTTPCACHE_ENABLED\n```\n\n```python\n\n\n```\n\n```python\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#HTTPCACHE_EXPIRATION_SECS",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #HTTPCACHE_EXPIRATION_SECS\n```\n\n```python\n\n\n```\n\n```python\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#HTTPCACHE_DIR",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #HTTPCACHE_DIR\n```\n\n```python\n\n\n```\n\n```python\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#HTTPCACHE_IGNORE_HTTP_CODES",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #HTTPCACHE_IGNORE_HTTP_CODES\n```\n\n```python\n\n\n```\n\n```python\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "#HTTPCACHE_STORAGE",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import #HTTPCACHE_STORAGE\n```\n\n```python\n\n\n```\n\n```python\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'\n# DOWNLOADER_MIDDLEWARES = {\n#    'myproject.middlewares.RandomProxyMiddleware':745\n# }\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "PROXY_LIST_FILE",
+        "kind": 5,
+        "importPath": "crawler.myproject.settings",
+        "description": "crawler.myproject.settings",
+        "peekOfCode": "PROXY_LIST_FILE = 'proxy.json'",
+        "detail": "crawler.myproject.settings",
+        "documentation": {
+            "value": "\n```python\nfrom crawler.myproject.settings import PROXY_LIST_FILE\n```\n\n```python\n\n\n```\n\n```python\nPROXY_LIST_FILE = 'proxy.json'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "schedule.app",
+        "description": "schedule.app",
+        "peekOfCode": "class Config(object):\n    SCHEDULER_API_ENABLED = True\nscheduler = APScheduler()\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:",
+        "detail": "schedule.app",
+        "documentation": {
+            "value": "\n```python\nfrom schedule.app import Config\n```\n\n```python\n\n\n```\n\n```python\nclass Config(object):\n    SCHEDULER_API_ENABLED = True\nscheduler = APScheduler()\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "do_collect_proxy_ip",
+        "kind": 2,
+        "importPath": "schedule.app",
+        "description": "schedule.app",
+        "peekOfCode": "def do_collect_proxy_ip():\n    '''\n    更新Proxy IP資料\n    '''\n    settings = [\n        ('project', 'default'),\n        ('spider', 'proxy_spider'),\n    ]\n    logging.info('--------------------------'+crawl_url)\n    r = requests.post(f'{crawl_url}/schedule.json', data=settings)",
+        "detail": "schedule.app",
+        "documentation": {
+            "value": "\n```python\nfrom schedule.app import do_collect_proxy_ip\n```\n\n```python\n\n\n```\n\n```python\ndef do_collect_proxy_ip():\n    '''\n    更新Proxy IP資料\n    '''\n    settings = [\n        ('project', 'default'),\n        ('spider', 'proxy_spider'),\n    ]\n    logging.info('--------------------------'+crawl_url)\n    r = requests.post(f'{crawl_url}/schedule.json', data=settings)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "scheduler",
+        "kind": 5,
+        "importPath": "schedule.app",
+        "description": "schedule.app",
+        "peekOfCode": "scheduler = APScheduler()\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')",
+        "detail": "schedule.app",
+        "documentation": {
+            "value": "\n```python\nfrom schedule.app import scheduler\n```\n\n```python\n\n\n```\n\n```python\nscheduler = APScheduler()\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "schedule.app",
+        "description": "schedule.app",
+        "peekOfCode": "app = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')\ndef do_collect_proxy_ip():",
+        "detail": "schedule.app",
+        "documentation": {
+            "value": "\n```python\nfrom schedule.app import app\n```\n\n```python\n\n\n```\n\n```python\napp = Flask(__name__)\napp.config.from_object(Config())\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')\ndef do_collect_proxy_ip():\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "scheduler.api_enabled",
+        "kind": 5,
+        "importPath": "schedule.app",
+        "description": "schedule.app",
+        "peekOfCode": "scheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')\ndef do_collect_proxy_ip():\n    '''\n    更新Proxy IP資料",
+        "detail": "schedule.app",
+        "documentation": {
+            "value": "\n```python\nfrom schedule.app import scheduler.api_enabled\n```\n\n```python\n\n\n```\n\n```python\nscheduler.api_enabled = True\nscheduler.init_app(app)\nif os.getenv('scrapyd_url')!=None:\n    crawl_url = os.getenv('scrapyd_url')\nelse:\n    crawl_url ='http://localhost:6800'\n@scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')\ndef do_collect_proxy_ip():\n    '''\n    更新Proxy IP資料\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]

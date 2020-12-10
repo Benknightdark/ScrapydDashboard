@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  ###################
+  crawler:
+    build:
+      context: ./crawler
+      dockerfile: ./Dockerfile
+    volumes:
+      - "./logs:app/logs"
+  schedule:
+    build:
+      context: ./schedule
+      dockerfile: ./Dockerfile
+    environment:
+      - SCRAPYD_URL=http://crawler:6800      
+    depends_on:
+      - crawler
+  ###################
+  web_site:
+    build:
+      context: ./web_site
+      dockerfile: ./Dockerfile
+    environment:
+      - SCRAPYD_URL=http://crawler:6800    
+    depends_on:
+      - crawler  
+  ###################
+  reverse_proxy_server:
+    build:
+      context: ./reverse_proxy_server
+      dockerfile: ./Dockerfile 
+    ports:
+    - "5269:80"
+    depends_on:
+      - crawler
+      - web_site
