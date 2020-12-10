@@ -1,5 +1,7 @@
 # ScrapydDashboard
-## 爬蟲儀表板
+## 本系統可提供UI管理和執行Scrapy爬蟲程式，和設計排程服務以定時執行Scrapy爬蟲作業 
+<br><br/>
+## 資料夾結構
 - crawler
   - Scrapy爬蟲服務
 - reverse_proxy_server
@@ -7,7 +9,7 @@
 - schedule
   - 執行爬蟲工作的排程服務
 - web_site
-  - 爬蟲儀表板網站     
+  - 爬蟲儀表板管理網站     
 ## 系統啟動方式
 1. 在根目錄執下以下指令
 ``` bash
