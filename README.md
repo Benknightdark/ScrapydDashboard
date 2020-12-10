@@ -8,10 +8,17 @@
   - 執行爬蟲工作的排程服務
 - web_site
   - 爬蟲儀表板網站     
-## 執行方式
+## 系統啟動方式
+1. 在根目錄執下以下指令
 ``` bash
 docker-compose up -d --build
 ```
+1. 在Browser開啟 [http://localhost:5269](http://localhost:5269) 網址
+2. 輸入帳號密碼
+   - 帳號：admin
+   - 密碼：123
+
+
 # reference
 - https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/react-swr-485b8e41ef78
 - https://material.io/resources/icons/?icon=refresh&style=baseline
