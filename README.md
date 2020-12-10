@@ -17,7 +17,8 @@ docker-compose up -d --build
 2. 輸入帳號密碼
    - 帳號：admin
    - 密碼：123
-
+# 系統截圖
+![alt text](./images/ScreenShot.png "系統畫面")
 
 # reference
 - https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/react-swr-485b8e41ef78
