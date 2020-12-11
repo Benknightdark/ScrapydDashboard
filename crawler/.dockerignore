@@ -24,3 +24,8 @@
 **/values.dev.yaml
 README.md
 */logs/
+*/dbs/
+**/logs/
+**/dbs/
+*/volume
+**/volume
