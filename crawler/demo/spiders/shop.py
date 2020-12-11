@@ -1,8 +1,25 @@
 import scrapy
 from bs4 import  BeautifulSoup  
 import logging
-
+from scrapy_distributed.spiders.sitemap import SitemapSpider
+from scrapy_distributed.common.queue_config import RabbitQueueConfig
+from scrapy_distributed.dupefilters.redis_bloom import RedisBloomConfig
 class ShopSpider(scrapy.Spider):
+    queue_conf: RabbitQueueConfig = RabbitQueueConfig(
+        name="example",
+        durable=True,
+        arguments={"x-queue-mode": "lazy", "x-max-priority": 255},
+        properties={"delivery_mode": 2}
+    )
+    item_conf: RabbitQueueConfig = RabbitQueueConfig(
+        name="example:items:new",
+        durable=True,
+        arguments={"x-queue-mode": "lazy", "x-max-priority": 255},
+    )
+    redis_bloom_conf: RedisBloomConfig = RedisBloomConfig(
+        key="example:dupefilter", error_rate=0.001, capacity=100_0000,
+        exclude_url_query_params=False
+    )
     name = 'shop'
     allowed_domains = ['www.costco.com.tw']
     start_urls = ['https://www.costco.com.tw/Health-Beauty/Vitamins-Herbals-Dietary-Supplements/c/701']

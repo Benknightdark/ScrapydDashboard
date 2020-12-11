@@ -7,11 +7,20 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'demo'
 
+BOT_NAME = 'demo'
 SPIDER_MODULES = ['demo.spiders']
 NEWSPIDER_MODULE = 'demo.spiders'
-
+SCHEDULER = "scrapy_distributed.schedulers.DistributedScheduler"
+SCHEDULER_QUEUE_CLASS = "scrapy_distributed.queues.amqp.RabbitQueue"
+RABBITMQ_CONNECTION_PARAMETERS = "amqp://guest:guest@localhost:5672/?heartbeat=0"
+DUPEFILTER_CLASS = "scrapy_distributed.dupefilters.redis_bloom.RedisBloomDupeFilter"
+BLOOM_DUPEFILTER_REDIS_URL = "redis://:@localhost:6379/0"
+BLOOM_DUPEFILTER_REDIS_HOST = "localhost"
+BLOOM_DUPEFILTER_REDIS_PORT = 6379
+REDIS_BLOOM_PARAMS = {"redis_cls": "redisbloom.client.Client"}
+BLOOM_DUPEFILTER_ERROR_RATE = 0.001
+BLOOM_DUPEFILTER_CAPACITY = 100_0000
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'myproject (+http://www.yourdomain.com)'
@@ -50,9 +59,11 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+DOWNLOADER_MIDDLEWARES = {
 #    'myproject.middlewares.MyprojectDownloaderMiddleware': 543,
-#}
+"scrapy.downloadermiddlewares.redirect.RedirectMiddleware": None,
+"scrapy_distributed.middlewares.amqp.RabbitMiddleware": 542
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -62,9 +73,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'myproject.pipelines.MyprojectPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   'scrapy_distributed.pipelines.amqp.RabbitPipeline': 301,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

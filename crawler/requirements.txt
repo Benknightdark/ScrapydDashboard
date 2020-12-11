@@ -5,3 +5,4 @@ pymssql
 aiohttp
 scrapy
 scrapyd
+scrapy-distributed
