@@ -2,8 +2,8 @@ import scrapy
 from bs4 import  BeautifulSoup  
 import logging
 
-class ShopSpidperSpider(scrapy.Spider):
-    name = 'shop_spidper'
+class ShopSpider(scrapy.Spider):
+    name = 'shop'
     allowed_domains = ['www.costco.com.tw']
     start_urls = ['https://www.costco.com.tw/Health-Beauty/Vitamins-Herbals-Dietary-Supplements/c/701']
     data=[]

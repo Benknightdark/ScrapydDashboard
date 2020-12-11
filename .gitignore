@@ -129,4 +129,4 @@ appsettings.json
 local.settings.json
 .python_packages
 crawler/twistd.pid
-crawler/dbs/default.db
+crawler/dbs/*

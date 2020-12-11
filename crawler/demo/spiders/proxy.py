@@ -4,13 +4,13 @@ import json
 import logging
 
 
-class ProxySpidersSpider(scrapy.Spider):
-    name = 'proxy_spider'
+class ProxySpiders(scrapy.Spider):
+    name = 'proxy'
     allowed_domains = ['www.free-proxy-list.net']
     start_urls = ['https://free-proxy-list.net/']
     custom_settings = {
         'ITEM_PIPELINES': {
-            'myproject.pipelines.JsonWriterPipeline': 300,
+            'demo.pipelines.JsonWriterPipeline': 300,
         }
     }
     data = []
