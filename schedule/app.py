@@ -3,9 +3,11 @@ from flask import Flask
 from flask_apscheduler import APScheduler
 import logging
 import requests
-# from CallDoctorDataCrawler  import main as CallDoctorDataCrawler
 import os
+import env_config
 logging.basicConfig(level=logging.INFO)
+env_config.init_env()
+logging.info(os.getenv('SCRAPYD_URL'))
 class Config(object):
     SCHEDULER_API_ENABLED = True
 scheduler = APScheduler()
@@ -13,11 +15,6 @@ app = Flask(__name__)
 app.config.from_object(Config())
 scheduler.api_enabled = True
 scheduler.init_app(app)
-if os.getenv('scrapyd_url')!=None:
-    crawl_url = os.getenv('scrapyd_url')
-else:
-    crawl_url ='http://localhost:6800'
-
 
 @scheduler.task('cron', id='do_collect_proxy_ip', hour=9, minute=37, day_of_week='0-6')
 def do_collect_proxy_ip():

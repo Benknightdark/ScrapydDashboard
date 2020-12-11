@@ -3,3 +3,4 @@ flask
 gunicorn
 flask_apscheduler
 requests2
+python-dotenv

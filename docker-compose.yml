@@ -6,14 +6,18 @@ services:
     build:
       context: ./crawler
       dockerfile: ./Dockerfile
+    env_file:
+     - production.env       
     volumes:
       - ./logs:/app/logs
   schedule:
     build:
       context: ./schedule
       dockerfile: ./Dockerfile
-    environment:
-      - SCRAPYD_URL=http://crawler:6800      
+    env_file:
+     - production.env      
+    # environment:
+    #   - SCRAPYD_URL=http://crawler:6800      
     depends_on:
       - crawler
   ###################
@@ -21,8 +25,10 @@ services:
     build:
       context: ./web_site
       dockerfile: ./Dockerfile
-    environment:
-      - SCRAPYD_URL=http://crawler:6800    
+    # environment:
+    #   - SCRAPYD_URL=http://crawler:6800
+    env_file:
+     - production.env    
     depends_on:
       - crawler  
   ###################
