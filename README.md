@@ -30,5 +30,5 @@ docker-compose up -d --build
 
 # Prepare To Do
 - 加入持續化儲存scrapyd logs
-
-
+- 整合scray-splash
+- 加入分散式處理 (https://pypi.org/project/Scrapy-Distributed/)

@@ -23,6 +23,7 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 README.md
+**/.DS_Store
 # */logs/
 # */dbs/
 # **/logs/

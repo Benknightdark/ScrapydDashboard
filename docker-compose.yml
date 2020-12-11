@@ -9,8 +9,9 @@ services:
     env_file:
      - production.env      
     volumes:
-      - "./container/logs:/app/logs"
-      - "./container/dbs:/app/dbs"
+      - scrapyd-logs-data:/app/data/logs/
+      - scrapyd-dbs-data:/app/data/dbs/
+  ###################
   schedule:
     build:
       context: ./schedule

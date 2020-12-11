@@ -131,3 +131,4 @@ local.settings.json
 crawler/twistd.pid
 crawler/dbs/*
 container/*
+*/data/*
