@@ -28,6 +28,7 @@ docker-compose up -d --build
 - https://github.com/vercel/swr
 - https://scrapyd.readthedocs.io/en/stable/
 
-
+# Prepare To Do
+- 加入持續化儲存scrapyd logs
 
 

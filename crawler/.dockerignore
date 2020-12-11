@@ -23,9 +23,9 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 README.md
-*/logs/
-*/dbs/
-**/logs/
-**/dbs/
-**/container/
-*/container/
+# */logs/
+# */dbs/
+# **/logs/
+# **/dbs/
+# **/container/
+# */container/
