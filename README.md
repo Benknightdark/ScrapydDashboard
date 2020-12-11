@@ -15,8 +15,8 @@
 ``` bash
 docker-compose up -d --build
 ```
-1. 在Browser開啟 [http://localhost:5269](http://localhost:5269) 網址
-2. 輸入帳號密碼
+2. 在Browser開啟 [http://localhost:5269](http://localhost:5269) 網址
+3. 輸入帳號密碼
    - 帳號：admin
    - 密碼：123
 ## 系統截圖

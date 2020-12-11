@@ -9,8 +9,8 @@ services:
     env_file:
      - production.env      
     volumes:
-      - "./volume/logs:/app/logs"
-      - "./volume/dbs:/app/dbs"
+      - "./container/logs:/app/logs"
+      - "./container/dbs:/app/dbs"
   schedule:
     build:
       context: ./schedule
