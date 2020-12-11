@@ -5,4 +5,4 @@ pymssql
 aiohttp
 scrapy
 scrapyd
-scrapy-distributed
+scrapyd-mongodb
