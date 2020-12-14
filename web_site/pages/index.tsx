@@ -5,6 +5,7 @@ import useSWR from 'swr'
 import NodeInfo from './components/node-info'
 import ProjectsInfo from './components/projects-info';
 import JobsInfo from './components/jobs-info';
+import HistoryJobsInfo from './components/history-jobs-info';
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
           </div>
           <div className="col-md-8 col-sm-12">       
               <JobsInfo />
+              <HistoryJobsInfo />
           </div>
         </div>
       </div>

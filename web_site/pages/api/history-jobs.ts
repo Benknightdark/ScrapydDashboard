@@ -9,7 +9,7 @@ export default async (req, res) => {
     for (const item of resProjects.projects) {
         // Connection URL
         const url = process.env.MONGODB_URL //'mongodb://localhost:27017';
-        const project = { name: item, logs: [] }
+        const project = { name: item, jobs: [] }
         // Database Name
         const dbName = item;
         const client = await MongoClient.connect(url);
@@ -29,7 +29,7 @@ export default async (req, res) => {
                 for (const item3 of docs) {
                     const crtime = (new Date(item3['create_time'] * 1000));
 
-                    project.logs.push(
+                    project.jobs.push(
                         {
                             name: item2,
                             create_time: `${crtime.getFullYear()}-${crtime.getMonth() + 1}-${crtime.getDate()} ${crtime.getHours()}:${crtime.getMinutes()}:${crtime.getSeconds()}`,
@@ -39,7 +39,7 @@ export default async (req, res) => {
                 }
             }
         }
-        project.logs = _.sortBy(project.logs, 'create_time_stamp').reverse();;
+        project.jobs = _.sortBy(project.jobs, 'create_time_stamp').reverse();;
         projects.push(project)
         await client.close();
     }
