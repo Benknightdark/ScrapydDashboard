@@ -30,3 +30,7 @@ README.md
 # **/dbs/
 # **/container/
 # */container/
+*/data/
+**/data/
+*/twistd.pid
+**/twistd.pid

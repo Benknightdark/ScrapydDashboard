@@ -5,3 +5,5 @@ pymssql
 aiohttp
 scrapy
 scrapyd
+pymongo
+python-dotenv
