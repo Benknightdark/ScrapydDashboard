@@ -7,11 +7,13 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-
+from  helpers.env_config import init_env
+import os 
+init_env()
 BOT_NAME = 'demo'
 SPIDER_MODULES = ['demo.spiders']
 NEWSPIDER_MODULE = 'demo.spiders'
-
+MONGODB_URL=os.getenv('MONGODB_URL')
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'myproject (+http://www.yourdomain.com)'
@@ -56,9 +58,12 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+MYEXT_ENABLED=True
+MYEXT_ITEMCOUNT=1000
+EXTENSIONS = {
+    'demo.extensions.SpiderOpenCloseLogging':666
+   #'scrapy.extensions.telnet.TelnetConsole': None,
+}
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
