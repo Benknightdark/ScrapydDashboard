@@ -29,6 +29,6 @@ docker-compose up -d --build
 - https://scrapyd.readthedocs.io/en/stable/
 
 # Prepare To Do
-- 加入持續化儲存scrapyd logs
+- (V) 加入持續化儲存scrapyd logs
 - 整合scray-splash
-- 加入分散式處理 (https://pypi.org/project/Scrapy-Distributed/)
+
