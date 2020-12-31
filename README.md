@@ -10,13 +10,22 @@
   - 執行爬蟲工作的排程服務
 - web_site
   - 爬蟲儀表板管理網站     
-## 系統啟動方式
-1. 在根目錄執下以下指令
+## 第一次系統啟動方式
+1. 在根目錄開啟CommandLine界面執下以下指令
 ``` bash
+cd crawler
+python3 -m pip install -r requirements.txt
+scrapyd
+```
+2. 打開新的CommandLine界面
+```bash
+curl http://localhost:6800/schedule.json -d project=demo -d spider=proxy
+{"node_name": "LAPTOP-0KEVN254", "status": "ok", "jobid": "f4a88ab04b1c11eb86ad00155df7d27c"}
+##停止scrapyd服務後再執行docker-compose指令 ###
 docker-compose up -d --build
 ```
-2. 在Browser開啟 [http://localhost:5269](http://localhost:5269) 網址
-3. 輸入帳號密碼
+3. 在Browser開啟 [http://localhost:5269](http://localhost:5269) 網址
+4. 輸入帳號密碼
    - 帳號：admin
    - 密碼：123
 ## 系統截圖
