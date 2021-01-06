@@ -20,7 +20,6 @@ scrapyd
 2. 打開新的CommandLine界面
 ```bash
 curl http://localhost:6800/schedule.json -d project=demo -d spider=proxy
-{"node_name": "LAPTOP-0KEVN254", "status": "ok", "jobid": "f4a88ab04b1c11eb86ad00155df7d27c"}
 ##停止scrapyd服務後再執行docker-compose指令 ###
 docker-compose up -d --build
 ```
