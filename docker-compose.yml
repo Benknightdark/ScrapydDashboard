@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.9'
 
 services:
   ###################
@@ -8,9 +8,6 @@ services:
       dockerfile: ./Dockerfile
     env_file:
      - production.env      
-    volumes:
-      - scrapyd-logs-data:/app/data/logs/
-      - scrapyd-dbs-data:/app/data/dbs/
     depends_on:
       - mongo  
   ###################
