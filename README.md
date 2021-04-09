@@ -1,5 +1,5 @@
 # ScrapydDashboard
-## 本系統可提供UI管理和執行Scrapy爬蟲程式，和設計排程服務以定時執行Scrapy爬蟲作業 
+## 使用UI管理Scrapy爬蟲程式，並可以透過設計排程服務以定時執行Scrapy爬蟲作業 
 <br><br/>
 ## 資料夾結構
 - crawler
