@@ -1,6 +1,6 @@
 import useSWR from "swr";
 
-const fetcher = url => fetch(url).then(r => r.json())
+const fetcher = (url:string) => fetch(url).then(r => r.json())
 
 const projectsData = () => {
   const { data, error, isValidating, mutate } = useSWR(
@@ -25,7 +25,7 @@ export default function ProjectsInfo() {
       <div className="card-body">
         <nav className="nav nav-pills flex-column flex-sm-row">
           {
-            fetchProjects.data && fetchProjects.data.map((a) => {
+            fetchProjects.data && fetchProjects.data.map((a:any) => {
               return (
                 <a className="flex-sm-fill text-sm-center nav-link active"
                   data-toggle="tab" href={'#' + a.project} role="tab"
@@ -36,11 +36,11 @@ export default function ProjectsInfo() {
         </nav>
         <div className="tab-content" id="nav-tabContent">
           {
-            fetchProjects.data && fetchProjects?.data.map((a) => {
+            fetchProjects.data && fetchProjects?.data.map((a:any) => {
               return (<div className="tab-pane fade show active" id={a.project} role="tabpanel" key={a.project}>
                 <ul className="list-group">
                   {
-                    a.spiders.map(s => {
+                    a.spiders.map((s:any) => {
                       return (
                         <li className="list-group-item d-flex justify-content-between align-items-center" key={s}>
                           {s}

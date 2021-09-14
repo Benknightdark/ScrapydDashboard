@@ -1,6 +1,6 @@
-import * as _ from "lodash";
+import { sortBy } from 'lodash-es';
 
-const getJobs = async (resProjects) => {
+const getJobs = async (resProjects:any) => {
     let projects = []
 
     for (let i = 0; i < resProjects.projects.length; i++) {
@@ -30,7 +30,7 @@ const getJobs = async (resProjects) => {
                 jobs.push(resJobs.finished[i])
             }
         }
-        const sortedJobs = _.sortBy(jobs, 'start_time').reverse();
+        const sortedJobs = sortBy(jobs, 'start_time').reverse();
         projects.push({ project: resProjects.projects[i], jobs: sortedJobs })
 
     }
@@ -49,7 +49,7 @@ const getData = async () => {
 /**
  * 取得爬蟲作業資訊
  */
-export default async (req, res) => {
+export default async (req:any, res:any) => {
     const data = await getData();
     res.json(data)
 }

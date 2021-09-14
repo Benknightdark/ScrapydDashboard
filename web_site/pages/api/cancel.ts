@@ -1,14 +1,14 @@
 
 export default async (req:any, res:any) => {
     const project = req.query['project']
-    const spider = req.query['spider']
+    const job = req.query['job']
     console.log(project)
-    console.log(spider)
+    console.log(job)
     const params = new URLSearchParams();
     params.append('project', project);
-    params.append('spider', spider);
+    params.append('job', job);
 
-    const resData = await fetch(`${process.env.SCRAPYD_URL}/schedule.json`,
+    const resData = await fetch(`${process.env.SCRAPYD_URL}/cancel.json`,
         {
             body: params,
             method: 'POST'

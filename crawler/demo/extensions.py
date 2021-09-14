@@ -35,7 +35,7 @@ class SpiderOpenCloseLogging:
         # return the extension object
         return ext
 
-    def spider_closed(self, spider):
+    def spider_closed(self, spider,reason):
         logger.info("closed spider %s", spider.name)
         project_name=settings.get('BOT_NAME')
         # logger.info(f'./data/logs/{project_name}/{spider.name}/*')
@@ -57,6 +57,7 @@ class SpiderOpenCloseLogging:
             db = db_client[db_name]
             db[spider.name].insert_one({
                 'create_time':timestamp,
+                'reason':reason,
                 'logs':file_data
             })
 

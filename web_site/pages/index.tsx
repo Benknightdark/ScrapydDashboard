@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import { useState } from 'react';
 // import styles from '../styles/Home.module.css'
-import useSWR from 'swr'
 import NodeInfo from './components/node-info'
 import ProjectsInfo from './components/projects-info';
 import JobsInfo from './components/jobs-info';

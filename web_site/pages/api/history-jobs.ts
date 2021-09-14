@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb'
-import * as _ from "lodash";
+import { sortBy } from 'lodash-es';
 
-export default async (req, res) => {
+export default async (req:any, res:any) => {
     let projects: any[] = []
     const reqProjects = await fetch(`${process.env.SCRAPYD_URL}/listprojects.json`)
     const resProjects = await reqProjects.json()
@@ -12,7 +12,7 @@ export default async (req, res) => {
         const project = { name: item, jobs: [] }
         // Database Name
         const dbName = item;
-        const client = await MongoClient.connect(url);
+        const client = await MongoClient.connect(url!);
         const reqSpiders = await fetch(`${process.env.SCRAPYD_URL}/listspiders.json?project=${dbName}`)
         const resSpiders = await reqSpiders.json()
         const db = await client.db(`${dbName}_log`);
@@ -22,6 +22,7 @@ export default async (req, res) => {
             const docs = await collection.find({}, {
                 projection: {
                     _id: true,
+                    reason:true,
                     create_time: true
                 }
             }).sort({ create_time: -1 }).toArray();
@@ -29,9 +30,10 @@ export default async (req, res) => {
                 for (const item3 of docs) {
                     const crtime = (new Date(item3['create_time'] * 1000));
 
-                    project.jobs.push(
+                    (project.jobs as any[]).push(
                         {
                             name: item2,
+                            reason:item3.reason,
                             create_time: `${crtime.getFullYear()}-${crtime.getMonth() + 1}-${crtime.getDate()} ${crtime.getHours()}:${crtime.getMinutes()}:${crtime.getSeconds()}`,
                             create_time_stamp: item3.create_time,
                             id: item3._id
@@ -39,7 +41,7 @@ export default async (req, res) => {
                 }
             }
         }
-        project.jobs = _.sortBy(project.jobs, 'create_time_stamp').reverse();;
+        project.jobs = sortBy(project.jobs, 'create_time_stamp').reverse();;
         projects.push(project)
         await client.close();
     }

@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+.btn-finished{
+  background: #d4ffef;
+}
+.btn-cancel{
+  background:#e76464;
+}
+.btn-shutdown{
+  background:#ffaf80;
+}
