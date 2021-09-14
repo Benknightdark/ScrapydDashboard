@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const getSpiders = async (resProjects) => {
+const getSpiders = async (resProjects:any) => {
     let projects = []
 
     for (let i=0;i<resProjects.projects.length;i++){
@@ -24,7 +24,7 @@ const getData = async () => {
 /**
  * 取得每個專案的爬蟲資訊
  */
-export default async (req, res) => {
+export default async (req:any, res:any) => {
    const  data =await getData();
    res.json(data)
      

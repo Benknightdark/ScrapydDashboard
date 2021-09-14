@@ -8,7 +8,7 @@ export default async (req:any, res:any) => {
     params.append('project', project);
     params.append('spider', spider);
 
-    const resData = await fetch(`${process.env.SCRAPYD_URL}/schedule.json`,
+    const resData = await fetch(`${process.env.SCRAPYD_URL}/cancel.json`,
         {
             body: params,
             method: 'POST'

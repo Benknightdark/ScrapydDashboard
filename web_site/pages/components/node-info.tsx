@@ -1,6 +1,6 @@
 import useSWR from "swr";
 
-const fetcher = url => fetch(url).then(r => r.json())
+const fetcher = (url:string) => fetch(url).then(r => r.json())
 
 const daemonStatusData = () => {
     const { data, error, isValidating, mutate } = useSWR(

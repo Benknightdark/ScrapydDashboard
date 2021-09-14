@@ -1,6 +1,6 @@
 import useSWR from "swr";
 
-const fetcher = url => fetch(url).then(r => r.json())
+const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 const historyJobsData = () => {
     const { data, error, isValidating, mutate } = useSWR(
@@ -28,7 +28,7 @@ export default function HistoryJobsInfo() {
                 <nav className="nav nav-pills flex-column flex-sm-row">
 
                     {
-                        fetchHistoryJobs.data && fetchHistoryJobs.data.map((a) => {
+                        fetchHistoryJobs.data && fetchHistoryJobs.data.map((a:any) => {
                             return (
                                 <a className="flex-sm-fill text-sm-center nav-link active"
                                     data-toggle="tab" href={'#' + a.name} role="tab"
@@ -40,11 +40,11 @@ export default function HistoryJobsInfo() {
                 </nav>
                 <div className="tab-content" id="nav-tabContent">
                     {
-                        fetchHistoryJobs.data && fetchHistoryJobs?.data.map((a) => {
+                        fetchHistoryJobs.data && fetchHistoryJobs?.data.map((a:any) => {
                             return (<div className="tab-pane fade show active" id={a.name} role="tabpanel" key={a.name}>
                                 <ul className="list-group">
                                     {
-                                        a.jobs.map(s => {
+                                        a.jobs.map((s:any) => {
                                             return (
                                                 <li className="list-group-item" key={s.id}>
                                                     <div className='row'>

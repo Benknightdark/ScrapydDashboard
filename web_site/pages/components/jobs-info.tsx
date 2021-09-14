@@ -1,6 +1,6 @@
 import useSWR from "swr";
 
-const fetcher = (url) => fetch(url).then((r) => r.json());
+const fetcher = (url:string) => fetch(url).then((r) => r.json());
 
 const jobsData = () => {
   const { data, error, isValidating, mutate } = useSWR("/api/jobs", fetcher, {
@@ -21,7 +21,7 @@ export default function JobsInfo() {
       <div className="card-body">
         <nav className="nav nav-pills flex-column flex-sm-row">
           {fetchJobs.data &&
-            fetchJobs.data.map((a) => {
+            fetchJobs.data.map((a:any) => {
               return (
                 <a
                   className="flex-sm-fill text-sm-center nav-link active"
@@ -37,7 +37,7 @@ export default function JobsInfo() {
         </nav>
         <div className="tab-content" id="nav-tabContent">
           {fetchJobs.data &&
-            fetchJobs?.data.map((a) => {
+            fetchJobs?.data.map((a:any) => {
               return (
                 <div
                   className="tab-pane fade show active"
@@ -46,7 +46,7 @@ export default function JobsInfo() {
                   key={a.project}
                 >
                   <ul className="list-group">
-                    {a.jobs.map((s) => {
+                    {a.jobs.map((s:any) => {
                       return (
                         <li className="list-group-item" key={s.id}>
                           <div className="row">

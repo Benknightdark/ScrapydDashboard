@@ -38,7 +38,7 @@ services:
     depends_on:
       - crawler
       - web_site
-#-----------MongoDB Server----------------- #
+###################
   mongo:
     image: mongo
     restart: always
@@ -49,7 +49,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
             - mongodb:/data/db
-#------------MongoDB網頁版管理系統--------------------- #
+###################
   mongo-express:
     image: mongo-express
     restart: always
