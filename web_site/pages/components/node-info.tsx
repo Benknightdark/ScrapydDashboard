@@ -1,5 +1,9 @@
 import useSWR from "swr";
-
+import { FiRefreshCcw } from 'react-icons/fi'
+import { IoServer } from 'react-icons/io5'
+import { AiOutlineBarChart, AiFillCheckCircle } from 'react-icons/ai'
+import { MdOutlinePendingActions } from 'react-icons/md'
+import { Fragment } from "react";
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 const daemonStatusData = () => {
@@ -14,39 +18,91 @@ export default function NodeInfo() {
     const fetchDaemonStatus = daemonStatusData();
 
     return (
+        <Fragment>
+            <div className="dark:border-yellow-100  border-gray-900  bg-white-100 rounded-lg border-5 shadow-md">
+                <header className="flex justify-between items-center  p-3 bg-green-200 dark:bg-green-700">
+                    <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">爬蟲節點資訊</h3>
+                    <FiRefreshCcw className="text-sm font-medium text-blue-600 hover:underline
+                     dark:text-yellow-100 w-5 h-5 hover:cursor-pointer"
+                        onClick={() => {
+                            fetchDaemonStatus.mutate()
+                        }}
+                    ></FiRefreshCcw>
+                </header>
 
-        <div className="bg-white rounded-lg border shadow-md p-8 dark:bg-gray-800 dark:border-gray-700">
-            <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">爬蟲節點資訊</h3>
-                <a href="#" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                    View all
-                </a>
-            </div>
-            <div className="flow-root">
-                <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
-                    <li className="py-3 sm:py-4">
-                        <div className="flex items-center space-x-4">
-                            <div className="flex-shrink-0">
-                                <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"/>
+                <div className="flow-root p-3">
+                    <ul role="list" className="divide-y divide-gray-500 dark:divide-yellow-200">
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1 min-w-0">
+                                    <div className="flex">
+                                        <IoServer className="w-6 h-6 text-gray-800 dark:text-white"></IoServer>
+                                        <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
+                                            節點名稱
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <span className="bg-blue-100 text-blue-800 xl:text-lg md:text-lg lg:text-lg text-sm font-medium mr-2 px-2.5
+                                     py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">{fetchDaemonStatus.data?.node_name}</span>
+                                </div>
                             </div>
-                            <div className="flex-1 min-w-0">
-                                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                    Neil Sims
-                                </p>
-                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                    email@windster.com
-                                </p>
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1 min-w-0">
+                                    <div className="flex">
+                                        <AiOutlineBarChart className="w-6 h-6 text-gray-800 dark:text-white"></AiOutlineBarChart>
+                                        <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
+                                            節點狀態
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <span className="bg-blue-100 text-blue-800 xl:text-lg md:text-lg lg:text-lg text-sm font-medium mr-2 px-2.5
+                                     py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">{fetchDaemonStatus.data?.status}</span>
+                                </div>
                             </div>
-                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                $320
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1 min-w-0">
+                                    <div className="flex">
+                                        <AiFillCheckCircle className="w-6 h-6 text-gray-800 dark:text-white"></AiFillCheckCircle>
+                                        <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
+                                            爬蟲作業已完成總數量
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <span className="bg-yellow-100 text-yellow-800 xl:text-lg md:text-lg lg:text-lg text-sm font-medium mr-2 px-2.5
+                                     py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-800">{fetchDaemonStatus.data?.finished}</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1 min-w-0">
+                                    <div className="flex">
+                                        <MdOutlinePendingActions className="w-6 h-6 text-gray-800 dark:text-white"></MdOutlinePendingActions>
+                                        <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
+                                            爬蟲作業等待完成總數量
+                                        </p>
+                                    </div>
 
-       
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+
+                                    <span className="bg-green-100 text-green-800 xl:text-lg md:text-lg lg:text-lg text-sm font-medium mr-2 px-2.5 py-0.5
+                                 rounded dark:bg-green-200 dark:text-green-900">{fetchDaemonStatus.data?.pending}</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </Fragment>
+
     )
 }
 
@@ -54,29 +110,3 @@ export default function NodeInfo() {
 
 
 
- {/* <div classNameName="card">
-        //     <div classNameName="card-header">
-        //         爬蟲節點資訊
-        //         <span classNameName="material-icons float-right"
-        //             style={{ cursor: 'pointer' }}
-        //             onClick={() => {
-        //                 fetchDaemonStatus.mutate()
-        //             }}>refresh</span>
-        //     </div>
-        //     <div classNameName="card-body">
-        //         <ul classNameName="list-group">
-        //             <li classNameName="list-group-item d-flex justify-content-between align-items-center">
-        //                 節點名稱   <span classNameName="badge bg-primary rounded-pill">{fetchDaemonStatus.data?.node_name}</span>
-        //             </li>
-        //             <li classNameName="list-group-item d-flex justify-content-between align-items-center">
-        //                 節點狀態   <span classNameName="badge bg-info rounded-pill">{fetchDaemonStatus.data?.status}</span>
-        //             </li>
-        //             <li classNameName="list-group-item d-flex justify-content-between align-items-center">
-        //                 爬蟲作業等待完成總數量   <span classNameName="badge bg-warning rounded-pill">{fetchDaemonStatus.data?.pending}</span>
-        //             </li>
-        //             <li classNameName="list-group-item d-flex justify-content-between align-items-center">
-        //                 爬蟲作業已完成總數量   <span classNameName="badge bg-success rounded-pill">{fetchDaemonStatus.data?.finished}</span>
-        //             </li>
-        //         </ul>
-        //     </div>
-        // </div> */}
