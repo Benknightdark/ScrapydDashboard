@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@themesberg/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -26,5 +27,7 @@ module.exports = {
       typography: ['dark'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@themesberg/flowbite/plugin')
+  ],
 }

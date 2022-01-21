@@ -44,7 +44,9 @@ export default function ProjectsInfo() {
                       return (
                         <li className="list-group-item d-flex justify-content-between align-items-center" key={s}>
                           {s}
-                          <button type='button' className='btn btn-info' onClick={
+                          <button type='button' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+                          focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 
+                          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={
                             async () => {
                               try {
                                 const fetchExecJob = await fetch(`/api/schedule?project=${a.project}&spider=${s}`)

@@ -18,15 +18,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossOrigin="anonymous"></script>
       </Head>
       <ThemeProvider attribute="class">
-        <div className="dark:bg-indigo-600 bg-yellow-500">
+        <div className="dark:bg-indigo-600 bg-yellow-300">
           <div className="p-3">
             <div className="flex items-center justify-between flex-wrap">
               <div className="w-0 flex-1 flex items-center">
-                <span className="flex p-2 rounded-lg dark:bg-indigo-800 bg-yellow-800">
+                <span className="flex p-2 rounded-lg dark:bg-indigo-800 bg-yellow-600">
                   <SiProbot className="h-6 w-6 text-white" aria-hidden="true"></SiProbot>
                 </span>
                 <p className="ml-3 font-medium text-white truncate">
-                  <span className='dark:text-white text-black'>Scrapy Dashboard</span>
+                  <span className='dark:text-white text-black hover:font-bold'>Scrapy Dashboard</span>
                 </p>
               </div>
               <div className="flex-shrink-0  justify-end">
