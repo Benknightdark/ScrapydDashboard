@@ -7,7 +7,7 @@ import { SiProbot } from 'react-icons/si'
 import Head from 'next/head';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-slate-50 dark:bg-black" style={{ height: "100vh" }}>
+    <div className="bg-slate-50 dark:bg-black" >
       <Head>
         <title>Spider Dashboard</title>
         <link rel="icon" href="/favicon.ico" />
