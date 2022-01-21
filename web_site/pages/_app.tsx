@@ -5,7 +5,7 @@ import ThemeSwitch from './components/theme-switch';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-slate-50 dark:bg-black">
+    <div className="bg-slate-50 dark:bg-black" style={{height:"100vh"}}>
       <ThemeProvider attribute="class">
         <header className="py-2">
           <div className="flex justify-between items-center">
