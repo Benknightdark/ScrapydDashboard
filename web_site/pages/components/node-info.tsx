@@ -20,7 +20,12 @@ export default function NodeInfo() {
 
     return (
         <Fragment>
-            <div className="dark:border-yellow-100 dark:bg-gray-700  border-gray-900  bg-red-100 rounded-lg border-5 shadow-md">
+            <div className="dark:border-yellow-100 dark:bg-gray-700
+              border-gray-900  bg-red-100 rounded-lg border-5 shadow-md
+              hover:border-orange-500
+              dark:hover:border-red-500
+              drop-shadow-lg
+              ">
                 <header className="flex justify-between items-center  p-3 bg-green-200 dark:bg-green-700">
                     <div className="flex space-x-2">
                         <FaServer className="text-sm font-medium text-blue-600 hover:underline
