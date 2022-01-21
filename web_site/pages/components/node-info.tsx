@@ -4,6 +4,7 @@ import { IoServer } from 'react-icons/io5'
 import { AiOutlineBarChart, AiFillCheckCircle } from 'react-icons/ai'
 import { MdOutlinePendingActions } from 'react-icons/md'
 import { Fragment } from "react";
+import { FaServer } from "react-icons/fa";
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 const daemonStatusData = () => {
@@ -21,7 +22,11 @@ export default function NodeInfo() {
         <Fragment>
             <div className="dark:border-yellow-100  border-gray-900  bg-white-100 rounded-lg border-5 shadow-md">
                 <header className="flex justify-between items-center  p-3 bg-green-200 dark:bg-green-700">
-                    <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">爬蟲節點資訊</h3>
+                    <div className="flex space-x-2">
+                        <FaServer className="text-sm font-medium text-blue-600 hover:underline
+                     dark:text-yellow-100 w-5 h-5 hover:cursor-pointer"></FaServer>
+                        <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">爬蟲節點資訊</h3>
+                    </div>
                     <FiRefreshCcw className="text-sm font-medium text-blue-600 hover:underline
                      dark:text-yellow-100 w-5 h-5 hover:cursor-pointer"
                         onClick={() => {
@@ -35,7 +40,7 @@ export default function NodeInfo() {
                         <li className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-1 min-w-0">
-                                    <div className="flex">
+                                    <div className="flex space-x-2">
                                         <IoServer className="w-6 h-6 text-gray-800 dark:text-white"></IoServer>
                                         <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
                                             節點名稱
@@ -51,7 +56,7 @@ export default function NodeInfo() {
                         <li className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-1 min-w-0">
-                                    <div className="flex">
+                                    <div className="flex space-x-2">
                                         <AiOutlineBarChart className="w-6 h-6 text-gray-800 dark:text-white"></AiOutlineBarChart>
                                         <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
                                             節點狀態
@@ -67,7 +72,7 @@ export default function NodeInfo() {
                         <li className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-1 min-w-0">
-                                    <div className="flex">
+                                    <div className="flex space-x-2">
                                         <AiFillCheckCircle className="w-6 h-6 text-gray-800 dark:text-white"></AiFillCheckCircle>
                                         <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
                                             爬蟲作業已完成總數量
@@ -83,7 +88,7 @@ export default function NodeInfo() {
                         <li className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-1 min-w-0">
-                                    <div className="flex">
+                                    <div className="flex space-x-2">
                                         <MdOutlinePendingActions className="w-6 h-6 text-gray-800 dark:text-white"></MdOutlinePendingActions>
                                         <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
                                             爬蟲作業等待完成總數量

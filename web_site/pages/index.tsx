@@ -2,6 +2,7 @@ import NodeInfo from './components/node-info'
 import ProjectsInfo from './components/projects-info';
 import JobsInfo from './components/jobs-info';
 import HistoryJobsInfo from './components/history-jobs-info';
+import { ToastContainer } from 'react-toastify';
 
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <div><ProjectsInfo /></div>
       <div> <JobsInfo /></div>
       <div><HistoryJobsInfo /></div>
+      <ToastContainer></ToastContainer>
+
     </div>
     // <div className="container-fluid">
     //   <div className='row justify-content-center  px-2   no-gutters'>
