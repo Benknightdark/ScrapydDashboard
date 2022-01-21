@@ -1,7 +1,9 @@
 import { MongoClient } from 'mongodb'
 import { sortBy } from 'lodash-es';
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req:any, res:any) => {
+export default async (req: NextApiRequest,
+    res: NextApiResponse) => {
     let projects: any[] = []
     const reqProjects = await fetch(`${process.env.SCRAPYD_URL}/listprojects.json`)
     const resProjects = await reqProjects.json()

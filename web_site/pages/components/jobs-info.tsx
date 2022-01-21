@@ -77,7 +77,7 @@ export default function JobsInfo() {
                                     }
                                   }
                                 }>
-                                  cancel
+                                  取消爬蟲任務
                                 </button>
                               }
                               <a

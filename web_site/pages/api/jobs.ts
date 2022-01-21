@@ -1,4 +1,5 @@
 import { sortBy } from 'lodash-es';
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 const getJobs = async (resProjects:any) => {
     let projects = []
@@ -49,7 +50,8 @@ const getData = async () => {
 /**
  * 取得爬蟲作業資訊
  */
-export default async (req:any, res:any) => {
+export default async (req: NextApiRequest,
+    res: NextApiResponse) => {
     const data = await getData();
     res.json(data)
 }
