@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "env-cmd": "^10.1.0",
     "lodash-es": "^4.17.21",
     "mongodb": "^4.3.1",
