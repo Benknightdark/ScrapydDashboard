@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes';
 import ThemeSwitch from './components/theme-switch';
-import { SiProbot } from 'react-icons/si'
+import { GiSpiderMask } from 'react-icons/gi'
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <div className="flex items-center justify-between flex-wrap">
             <div className="w-0 flex-1 flex items-center">
               <span className="flex p-2 rounded-lg dark:bg-indigo-800 bg-yellow-600">
-                <SiProbot className="h-6 w-6 text-white" aria-hidden="true"></SiProbot>
+                <GiSpiderMask className="h-6 w-6 text-white" aria-hidden="true"></GiSpiderMask>
               </span>
               <p className="ml-3 font-medium text-white truncate">
                 <span className='dark:text-white text-black hover:font-bold'>Scrapy Dashboard</span>

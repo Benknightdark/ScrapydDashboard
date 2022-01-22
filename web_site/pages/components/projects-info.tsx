@@ -1,8 +1,9 @@
 import useSWR from "swr";
 import { toast } from 'react-toastify';
-import { FaServer } from "react-icons/fa";
+import { FaServer, FaSpider } from "react-icons/fa";
 import { FiRefreshCcw } from "react-icons/fi";
 import { IoServer } from "react-icons/io5";
+import { GiSpiderBot } from "react-icons/gi";
 
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
@@ -20,7 +21,7 @@ export default function ProjectsInfo() {
 
   return (
     <div className="dark:border-yellow-100 dark:bg-gray-700
-    border-gray-900  bg-red-100 rounded-lg border-5 shadow-md
+    border-gray-900  bg-yellow-100 rounded-lg border-5 shadow-md
     hover:border-orange-500
     dark:hover:border-red-500
     drop-shadow-lg
@@ -49,7 +50,9 @@ export default function ProjectsInfo() {
                        border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400
                         dark:hover:text-gray-300 `+ isActive}
                   id={a['project'] + "-tab"} data-tabs-target={"#" + a['project']} type="button" role="tab" aria-controls={a['project']}
-                  aria-selected="true">{a['project']}</button>
+                  aria-selected="true">
+                  {a['project']}
+                </button>
               </li>
             })
           }
@@ -59,11 +62,9 @@ export default function ProjectsInfo() {
         {
           fetchProjects.data && fetchProjects?.data.map((a: any, index: number) => {
             let isHidden: string = index == 0 ? "" : "hidden";
-
             return (
               <div className={`p-2 bg-gray-50 rounded-lg dark:bg-gray-800 ` + isHidden}
                 id={a['project']} role="tabpanel" aria-labelledby={a['project'] + "-tab"} key={a['project'] + "lll"}>
-
                 <div className="flow-root p-1">
                   <ul role="list" className="divide-y divide-gray-500 dark:divide-yellow-200">
                     {
@@ -72,27 +73,31 @@ export default function ProjectsInfo() {
                           <div className="flex items-center space-x-4">
                             <div className="flex-1 min-w-0">
                               <div className="flex space-x-2">
-                                <IoServer className="w-6 h-6 text-gray-800 dark:text-white"></IoServer>
+                                <FaSpider className="w-6 h-6 text-gray-800 dark:text-white"></FaSpider>
                                 <p className="xl:text-lg md:text-lg lg:text-lg text-sm font-medium text-gray-900 truncate dark:text-white">
                                   {s}
                                 </p>
                               </div>
                             </div>
                             <div className="inline-flex items-center text-base font-semibold  ">
-                              <button type='button' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
-                          focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 
+                              <button type='button' className=" bg-blue-700 hover:bg-blue-800 focus:ring-4 
+                          focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-1 mb-1
                           dark:bg-yellow-200 dark:hover:bg-yellow-400 dark:focus:ring-yellow-500" onClick={
                                   async () => {
                                     try {
                                       const fetchExecJob = await fetch(`/api/schedule?project=${a.project}&spider=${s}`)
                                       const res = await fetchExecJob.json()
-                                      // alert(JSON.stringify(res))
                                       toast(JSON.stringify(res));
                                     } catch (error) {
                                       toast(String(error))
                                     }
                                   }
-                                }><div className="text-white dark:text-gray-900">執行爬蟲</div> </button>
+                                }>
+                                <div className="flex space-x-2">
+                                  <GiSpiderBot className='text-gray-100 dark:text-gray-800 h-5 w-5'></GiSpiderBot>
+                                  <span className='text-gray-100 dark:text-gray-800 font-bold'>執行爬蟲</span>
+                                </div>
+                              </button>
                             </div>
                           </div>
                         </li>
@@ -102,9 +107,6 @@ export default function ProjectsInfo() {
 
                   </ul>
                 </div>
-
-
-
               </div>
             )
           })
