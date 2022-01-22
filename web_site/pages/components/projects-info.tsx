@@ -46,8 +46,11 @@ export default function ProjectsInfo() {
             fetchProjects.data && fetchProjects?.data.map((a: any, index: number) => {
               let isActive: string = index == 0 ? "active" : "";
               return <li className="mr-2" role="presentation" key={a['project'] + "ll"}>
-                <button className={`inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg
-                       border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400
+                <button className={`inline-block py-4 px-4 text-sm 
+                font-medium text-center text-gray-500 rounded-t-lg
+                       border-b-2 border-transparent 
+                       hover:text-gray-600 hover:border-gray-300 
+                       dark:text-gray-400
                         dark:hover:text-gray-300 `+ isActive}
                   id={a['project'] + "-tab"} data-tabs-target={"#" + a['project']} type="button" role="tab" aria-controls={a['project']}
                   aria-selected="true">
