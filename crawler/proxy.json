@@ -1,0 +1,82 @@
+[
+    {
+        "scheme": "http",
+        "proxy": "http://140.227.210.163:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://140.227.210.163:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "http",
+        "proxy": "http://168.138.223.90:8888",
+        "port": "8888"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://168.138.223.90:8888",
+        "port": "8888"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://103.240.77.98:30093",
+        "port": "30093"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://140.227.199.207:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://140.227.229.54:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://47.56.69.11:8000",
+        "port": "8000"
+    },
+    {
+        "scheme": "http",
+        "proxy": "http://164.70.75.194:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "http",
+        "proxy": "http://164.70.70.77:3128",
+        "port": "3128"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://103.92.114.2:80",
+        "port": "80"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://103.213.208.131:8080",
+        "port": "8080"
+    },
+    {
+        "scheme": "http",
+        "proxy": "http://103.213.208.131:8080",
+        "port": "8080"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://142.82.48.250:80",
+        "port": "80"
+    },
+    {
+        "scheme": "http",
+        "proxy": "http://142.82.48.250:80",
+        "port": "80"
+    },
+    {
+        "scheme": "https",
+        "proxy": "https://95.67.19.181:3128",
+        "port": "3128"
+    }
+]
