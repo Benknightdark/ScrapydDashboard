@@ -36,7 +36,28 @@ export default function JobsInfo() {
           }}
         ></FiRefreshCcw>
       </header>
-      <div id="projectInfoTabContent">
+      <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul className="flex flex-wrap -mb-px" id="projectTabList" data-tabs-toggle="#jobTabContent" role="tablist">
+          {
+            fetchJobs.data && fetchJobs?.data.map((a: any, index: number) => {
+              let isActive: string = index == 0 ? "active" : "";
+              return <li className="mr-2" role="presentation" key={a['project'] + "ll"}>
+                <button className={`inline-block py-4 px-4 text-sm 
+                font-medium text-center text-gray-500 rounded-t-lg
+                       border-b-2 border-transparent 
+                       hover:text-gray-600 hover:border-gray-300 
+                       dark:text-gray-400
+                        dark:hover:text-gray-300 `+ isActive}
+                  id={a['project'] + "-tab"} data-tabs-target={"#" + a['project']} type="button" role="tab" aria-controls={a['project']}
+                  aria-selected="true">
+                  {a['project']}
+                </button>
+              </li>
+            })  
+          }
+        </ul>
+      </div>
+      <div id="jobTabContent">
         {
           fetchJobs.data && fetchJobs?.data.map((a: any, index: number) => {
             let isHidden: string = index == 0 ? "" : "hidden";
@@ -44,7 +65,7 @@ export default function JobsInfo() {
               <div className={`p-2 bg-gray-50 rounded-lg dark:bg-gray-800 ` + isHidden}
                 id={a['project']} role="tabpanel" aria-labelledby={a['project'] + "-tab"} key={a['project'] + "lll"}>
                 <div className="flow-root p-1">
-                  <ul role="list" className="divide-y divide-gray-500 dark:divide-yellow-200">
+                  <ul role="list" className="divide-y divide-gray-500 dark:divide-yellow-20 overflow-y-auto h-96">
                     {
                       a['jobs'].map((s: any) => {
                         return <li className="py-3 sm:py-4">
@@ -117,8 +138,6 @@ export default function JobsInfo() {
                         </li>
                       })
                     }
-
-
                   </ul>
                 </div>
               </div>
