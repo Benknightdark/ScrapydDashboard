@@ -1,6 +1,7 @@
+import { AiOutlineBarChart } from "react-icons/ai";
 import { FaServer, FaSpider } from "react-icons/fa";
 import { FiRefreshCcw } from "react-icons/fi";
-import { GiSpiderBot } from "react-icons/gi";
+import { ImCancelCircle } from "react-icons/im";
 import { toast } from "react-toastify";
 import useSWR from "swr";
 
@@ -55,31 +56,28 @@ export default function JobsInfo() {
                                   {s['spider']}
                                 </p>
                                 <div className="lg:flex xl:flex md:flex flex-col hidden">
-                                  <span className="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 
+                                  {s.start_time && <span className="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 
                                 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                                    開始: {s.start_time && s.start_time.split(".")[0]}
-                                  </span>
+                                    開始: {s.start_time.split(".")[0]}
+                                  </span>}
                                   <span className="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 
                                 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 self-center">
                                     |
                                   </span>
-                                  <span className="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 
+                                  {s.end_time && <span className="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 
                                 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                                    結束: {s.end_time && s.end_time.split(".")[0]}
-                                  </span>
+                                    結束: {s.end_time.split(".")[0]}
+                                  </span>}
                                 </div>
                               </div>
                             </div>
                             <div className="inline-flex items-center text-base font-semibold  ">
-                              <button type='button' className=" bg-blue-700 hover:bg-blue-800 focus:ring-4 
-                          focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-1 mb-1
-                          dark:bg-yellow-200 dark:hover:bg-yellow-400 dark:focus:ring-yellow-500">
+                              <button type='button' className={s['type'] + "Btn"}>
                                 <div className="flex space-x-2">
-                                  <GiSpiderBot className='text-gray-100 dark:text-gray-800 h-5 w-5'></GiSpiderBot>
-                                  <span className='text-gray-100 dark:text-gray-800 font-bold'>{s['type']}</span>
+                                  <AiOutlineBarChart className='text-gray-100 dark:text-gray-800 h-5 w-5'></AiOutlineBarChart>
+                                  <span className='text-gray-100 dark:text-gray-800 font-bold'>狀態: {s['type']}</span>
                                 </div>
                               </button>
-
                               <a
                                 href={`/api/logs?project=${a.project}&spider=${s.spider}&id=${s.id}`}
                                 className=" bg-blue-700 hover:bg-blue-800 focus:ring-4 
@@ -87,28 +85,27 @@ export default function JobsInfo() {
                                 dark:bg-yellow-200 dark:hover:bg-yellow-400 dark:focus:ring-yellow-500"
                                 target="_blank"
                               >
-                                下載Log
-                              </a>
+                                <span className='text-gray-100 dark:text-gray-800 font-bold'>下載Log</span></a>
                               {
-                                s.type != 'finished' && <button type='button' className=" bg-blue-700 hover:bg-blue-800 focus:ring-4 
-                                focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-1 mb-1
-                                dark:bg-yellow-200 dark:hover:bg-yellow-400 dark:focus:ring-yellow-500"
+                                s.type != 'finished' && <button type='button' className=" bg-red-700 hover:bg-red-800 focus:ring-4 
+                                focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-1 mb-1
+                                dark:bg-red-200 dark:hover:bg-red-400 dark:focus:ring-red-500"
                                   onClick={
                                     async () => {
                                       console.log(s)
                                       try {
                                         const fetchExecJob = await fetch(`/api/cancel?project=${a.project}&job=${s.id}`)
                                         const res = await fetchExecJob.json()
-                                        alert(JSON.stringify(res))
+                                        toast(JSON.stringify(res))
                                       } catch (error) {
-                                        alert(error)
+                                        toast(String(error))
                                       }
                                     }
                                   }
                                 >
 
                                   <div className="flex space-x-2">
-                                    <GiSpiderBot className='text-gray-100 dark:text-gray-800 h-5 w-5'></GiSpiderBot>
+                                    <ImCancelCircle className='text-gray-100 dark:text-gray-800 h-5 w-5'></ImCancelCircle>
                                     <span className='text-gray-100 dark:text-gray-800 font-bold'>取消爬蟲任務</span>
                                   </div>
                                 </button>
