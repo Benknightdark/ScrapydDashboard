@@ -19,7 +19,6 @@ export default function NodeInfo() {
     const fetchDaemonStatus = daemonStatusData();
 
     return (
-        <Fragment>
             <div className="dark:border-yellow-100 dark:bg-gray-700
               border-gray-900  bg-red-100 rounded-lg border-5 shadow-md
               hover:border-orange-500
@@ -111,8 +110,6 @@ export default function NodeInfo() {
                     </ul>
                 </div>
             </div>
-        </Fragment>
-
     )
 }
 
