@@ -21,6 +21,10 @@
                           focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-1 mb-1
                           dark:bg-purple-200 dark:hover:bg-purple-400 dark:focus:ring-purple-500
 }
+.cardTitleIcon{
+  @apply text-sm font-medium text-blue-600 hover:underline
+  dark:text-yellow-100 w-5 h-5 hover:cursor-pointer
+}
 a {
   color: inherit;
   text-decoration: none;

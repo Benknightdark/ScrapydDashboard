@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import ThemeSwitch from './components/theme-switch';
 import { GiSpiderMask } from 'react-icons/gi'
 import Head from 'next/head';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -38,6 +39,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </div>
       <div className="h-screen  bg-slate-50 dark:bg-black">
         <Component {...pageProps} />
+        <ToastContainer></ToastContainer>
+
       </div>
     </ThemeProvider>
   )

@@ -3,8 +3,11 @@ import { FiRefreshCcw } from 'react-icons/fi'
 import { IoServer } from 'react-icons/io5'
 import { AiOutlineBarChart, AiFillCheckCircle } from 'react-icons/ai'
 import { MdOutlinePendingActions } from 'react-icons/md'
-import { Fragment } from "react";
+import { BsArrowsFullscreen } from 'react-icons/bs'
 import { FaServer } from "react-icons/fa";
+import { AiOutlineFullscreenExit } from 'react-icons/ai'
+import  { useRouter } from "next/router";
+import { useState } from "react";
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 const daemonStatusData = () => {
@@ -17,8 +20,10 @@ const daemonStatusData = () => {
 }
 export default function NodeInfo() {
     const fetchDaemonStatus = daemonStatusData();
-
+    const router = useRouter();
+    const [cardIcon, setCardIcon] = useState(router.route.includes("dashboard"))
     return (
+        <div className="p-3">
             <div className="dark:border-yellow-100 dark:bg-gray-700
               border-gray-900  bg-red-100 rounded-lg border-5 shadow-md
               hover:border-orange-500
@@ -27,10 +32,24 @@ export default function NodeInfo() {
               ">
                 <header className="flex justify-between items-center  p-3 bg-green-200 dark:bg-green-700">
                     <div className="flex space-x-2">
-                        <FaServer className="text-sm font-medium text-blue-600 hover:underline
-                     dark:text-yellow-100 w-5 h-5 hover:cursor-pointer"></FaServer>
+                        <FaServer className="cardTitleIcon"
+                        ></FaServer>
                         <h3 className="text-xl font-bold leading-none text-gray-900 dark:text-white">爬蟲節點資訊</h3>
+                        {
+                            !cardIcon ? <BsArrowsFullscreen
+                                className="cardTitleIcon"
+                                onClick={() => {
+                                    router.push('/dashboard/node-info')
+                                }}
+                            ></BsArrowsFullscreen> : <AiOutlineFullscreenExit
+                                className="cardTitleIcon"
+                                onClick={() => {
+                                    router.push('/')
+                                }}
+                            ></AiOutlineFullscreenExit>
+                        }
                     </div>
+
                     <FiRefreshCcw className="text-sm font-medium text-blue-600 hover:underline
                      dark:text-yellow-100 w-5 h-5 hover:cursor-pointer"
                         onClick={() => {
@@ -110,6 +129,8 @@ export default function NodeInfo() {
                     </ul>
                 </div>
             </div>
+        </div>
+
     )
 }
 
