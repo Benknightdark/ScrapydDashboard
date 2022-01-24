@@ -1,7 +1,7 @@
-import NodeInfo from './components/node-info'
-import ProjectsInfo from './components/projects-info';
-import JobsInfo from './components/jobs-info';
-import HistoryJobsInfo from './components/history-jobs-info';
+import NodeInfo from './dashboard/node-info'
+import ProjectsInfo from './dashboard/projects-info';
+import JobsInfo from './dashboard/jobs-info';
+import HistoryJobsInfo from './dashboard/history-jobs-info';
 import { ToastContainer } from 'react-toastify';
 
 

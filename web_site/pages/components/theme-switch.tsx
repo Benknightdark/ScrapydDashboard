@@ -17,7 +17,6 @@ const ThemeSwitch: React.FC = () => {
     setChecked(nextChecked);
   };
 
-  // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {

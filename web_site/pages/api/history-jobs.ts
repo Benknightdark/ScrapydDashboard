@@ -24,7 +24,7 @@ export default async (req: NextApiRequest,
             const docs = await collection.find({}, {
                 projection: {
                     _id: true,
-                    reason:true,
+                    reason: true,
                     create_time: true
                 }
             }).sort({ create_time: -1 }).toArray();
@@ -35,7 +35,7 @@ export default async (req: NextApiRequest,
                     (project.jobs as any[]).push(
                         {
                             name: item2,
-                            reason:item3.reason,
+                            reason: item3.reason,
                             create_time: `${crtime.getFullYear()}-${crtime.getMonth() + 1}-${crtime.getDate()} ${crtime.getHours()}:${crtime.getMinutes()}:${crtime.getSeconds()}`,
                             create_time_stamp: item3.create_time,
                             id: item3._id
