@@ -1,5 +1,5 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3-slim-buster
+FROM python:3.9.10-slim-buster
 ENV TZ=Asia/Taipei
 
 EXPOSE 5000
