@@ -1,7 +1,9 @@
 import { MongoClient } from 'mongodb'
 import { sortBy } from 'lodash-es';
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req:any, res:any) => {
+export default async (req: NextApiRequest,
+    res: NextApiResponse) => {
     let projects: any[] = []
     const reqProjects = await fetch(`${process.env.SCRAPYD_URL}/listprojects.json`)
     const resProjects = await reqProjects.json()
@@ -22,7 +24,7 @@ export default async (req:any, res:any) => {
             const docs = await collection.find({}, {
                 projection: {
                     _id: true,
-                    reason:true,
+                    reason: true,
                     create_time: true
                 }
             }).sort({ create_time: -1 }).toArray();
@@ -33,7 +35,7 @@ export default async (req:any, res:any) => {
                     (project.jobs as any[]).push(
                         {
                             name: item2,
-                            reason:item3.reason,
+                            reason: item3.reason,
                             create_time: `${crtime.getFullYear()}-${crtime.getMonth() + 1}-${crtime.getDate()} ${crtime.getHours()}:${crtime.getMinutes()}:${crtime.getSeconds()}`,
                             create_time_stamp: item3.create_time,
                             id: item3._id

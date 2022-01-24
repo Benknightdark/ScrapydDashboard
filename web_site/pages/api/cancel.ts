@@ -1,7 +1,9 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req:any, res:any) => {
-    const project = req.query['project']
-    const job = req.query['job']
+export default async (req: NextApiRequest,
+    res: NextApiResponse) => {
+    const project = req.query['project'].toString()
+    const job = req.query['job'].toString()
     console.log(project)
     console.log(job)
     const params = new URLSearchParams();

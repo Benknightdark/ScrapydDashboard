@@ -3,11 +3,13 @@
  * 
  */
 import { MongoClient, ObjectId } from 'mongodb'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req:any, res:any) => {
+export default async (req: NextApiRequest,
+  res: NextApiResponse) => {
   const project = req.query['project']
   const spider = req.query['spider']
-  const id = req.query['id']
+  const id = req.query['id'].toString()
   let url = '';
   let logFile = '';
   console.log(req.query)
