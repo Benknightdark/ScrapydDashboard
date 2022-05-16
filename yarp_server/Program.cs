@@ -10,7 +10,19 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 
 var app = builder.Build();
-app.UseOcelot().Wait();
+app.UseOcelot(new OcelotPipelineConfiguration
+{
+    PreErrorResponderMiddleware = async (ctx, next) =>
+    {
+        Console.WriteLine("===========================================");
+        Console.WriteLine(ctx.Request.Path);
+        Console.WriteLine();
+        if (ctx.Request.Path.ToString().Contains("api")){
+        }
+        Console.WriteLine("===========================================");
+        await next.Invoke();
+    }
+}).Wait();
 // app.UseCors(x => x
 //     .AllowAnyOrigin()
 //     .AllowAnyMethod()
