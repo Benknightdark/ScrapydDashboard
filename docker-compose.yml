@@ -7,16 +7,16 @@ services:
       context: ./crawler
       dockerfile: ./Dockerfile
     env_file:
-     - production.env      
+      - production.env
     depends_on:
-      - mongo  
+      - mongo
   ###################
   schedule:
     build:
       context: ./schedule
       dockerfile: ./Dockerfile
     env_file:
-     - production.env          
+      - production.env
     depends_on:
       - crawler
   ###################
@@ -25,30 +25,30 @@ services:
       context: ./web_site
       dockerfile: ./Dockerfile
     env_file:
-     - production.env    
+      - production.env
     depends_on:
-      - crawler  
+      - crawler
   ###################
   reverse_proxy_server:
     build:
       context: ./reverse_proxy_server
-      dockerfile: ./Dockerfile 
+      dockerfile: ./Dockerfile
     ports:
-    - "5269:80"
+      - "5269:80"
     depends_on:
       - crawler
       - web_site
-###################
+  ###################
   mongo:
     image: mongo
     restart: always
     ports:
-            - 1769:27017
+      - 1769:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-            - mongodb:/data/db                          
+      - mongodb:/data/db
 volumes:
   scrapyd-logs-data:
   scrapyd-dbs-data:
