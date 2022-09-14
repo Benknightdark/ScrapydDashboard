@@ -31,26 +31,15 @@ class RandomProxyMiddleware(HttpProxyMiddleware):
                 self.proxies[scheme].append(self._get_proxy(url, scheme))
     @classmethod
     def from_crawler(cls, crawler):
-        # logging.info('------------------------------------------------------')
-        # logging.info(crawler.spider.name)
-        # logging.info('------------------------------------------------------')
-        # if crawler.spider.name=='nhi_spider':
         auth_encoding = crawler.settings.get("HTTPPROXY_AUTH_ENCODING", "latin-1")
         proxy_list_file = crawler.settings.get("PROXY_LIST_FILE")
         return cls(auth_encoding, proxy_list_file)            
-        # else:
-        #     return cls()
 
     def _set_proxy(self, request, scheme):
         creds, proxy = random.choice(self.proxies[scheme])
         request.meta["proxy"] = proxy
         if creds:
             request.headers["Proxy-Authorization"] = b"Basic" + creds
-    # def process_response(self, request, response, spider):
-    #     if response.url == "https://free-proxy-list.net/":
-    #        raise IgnoreRequest()
-    #     else:
-    #        return response
                                
 class MyprojectSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -144,3 +133,11 @@ class MyprojectDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class ProxyMiddleware(object):
+    def process_request(self, request, spider):
+        with open('./demo/proxy.json') as f:
+            proxy_list = json.load(f)
+            random_proxy = random.choice(proxy_list)
+        request.meta['proxy'] = f"{random_proxy['proxy']}"

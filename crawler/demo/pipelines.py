@@ -9,31 +9,27 @@ from itemadapter import ItemAdapter
 import logging
 from helpers.error_log_helper import (format_error_msg)
 import json
-class JsonWriterPipeline(object):
-    line=[]
-    def open_spider(self, spider):
-        self.file = open('proxy.json', 'w')
-        # Your scraped items will be saved in the file 'scraped_items.json'.
-        # You can change the filename to whatever you want.
-        # self.file.write("[")
-
+class JsonWriterPipeline:  # (object)
+    line = []
+    data = None
     def close_spider(self, spider):
-        # self.file.write(self.line[:-2])
-
-        # self.file.write("]")
-        self.file.write(json.dumps(self.line))
+        self.file = open('./demo/proxy.json', 'r')
+        self.data = json.load(self.file)
+        for line_object in self.line:
+            check = any(
+                filter(lambda x: x['proxy'] == line_object['proxy'], self.data))
+            print(check)
+            if check is False:
+                self.data.append(line_object)
+        print('---------------------------------')
         self.file.close()
+        print(self.data)
+        write_file = open('proxy.json', 'w')
+        write_file.write(json.dumps(self.data))  # self.line
 
     def process_item(self, item, spider):
         logging.info('------------')
         logging.info(item)
         logging.info('------------')
         self.line.append(item)
-        # self.line = json.dumps(
-        #     dict(item),
-        #     indent = 4,
-        #     sort_keys = True,
-        #     separators = (',', ': ')
-        # ) + ",\n"
-        # self.file.write(line)
         return item
