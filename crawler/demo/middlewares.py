@@ -137,7 +137,8 @@ class MyprojectDownloaderMiddleware:
 
 class ProxyMiddleware(object):
     def process_request(self, request, spider):
-        with open('./demo/proxy.json') as f:
+        file_path='./demo/proxy.json'
+        with open(file_path) as f:
             proxy_list = json.load(f)
             random_proxy = random.choice(proxy_list)
         request.meta['proxy'] = f"{random_proxy['proxy']}"

@@ -93,4 +93,4 @@ EXTENSIONS = {
 # DOWNLOADER_MIDDLEWARES = {
 #    'myproject.middlewares.RandomProxyMiddleware':745
 # }
-PROXY_LIST_FILE = 'proxy.json'
+# PROXY_LIST_FILE = 'proxy.json'
