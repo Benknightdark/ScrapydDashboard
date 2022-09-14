@@ -7,9 +7,9 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default async (req: NextApiRequest,
   res: NextApiResponse) => {
-  const project = req.query['project']
-  const spider = req.query['spider']
-  const id = req.query['id'].toString()
+  const project = req?.query['project']
+  const spider = req?.query['spider']
+  const id = req?.query['id']?.toString()
   let url = '';
   let logFile = '';
   console.log(req.query)
